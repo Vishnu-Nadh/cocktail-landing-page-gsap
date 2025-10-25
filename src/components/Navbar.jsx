@@ -14,12 +14,15 @@ const Navbar = () => {
 
     navTween.fromTo(
       "nav",
+      { backgroundColor: "transparent" },
       {
-        backgroundColor: "transparent",
-      },
-      { backgroundColor: "rgba(0, 0, 0, 0.30)", duration: 1, backgroundFilter: "blur(10px)", ease: "power1.inOut" }
+        backgroundColor: "#00000050",
+        backdropFilter: "blur(10px)",
+        duration: 1,
+        ease: "power1.inOut",
+      }
     );
-  }, []);
+  });
   return (
     <nav>
       <div>
